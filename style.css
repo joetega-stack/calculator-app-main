@@ -135,11 +135,13 @@ body {
   background-color: rgba(255, 68, 0, 0.585);
   font-weight: 600;
   color: white;
-  .reset:active{
-      scale: 99%;
-  }
+  cursor: pointer;
+
 }
 
+.reset:active{
+    scale: 99%;
+}
 .dark-mode .reset{
   background-color: rgba(255, 68, 0, 0.786);
 }
