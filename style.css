@@ -25,6 +25,7 @@ body {
   border-radius: 15px;
 }
 
+
 .out {
   background-color: rgb(243, 240, 240);
   height: 70px;
@@ -143,5 +144,11 @@ body {
     scale: 99%;
 }
 .dark-mode .reset{
+  background-color: rgba(255, 68, 0, 0.786);
+}
+.delete{
+  background-color: rgba(255, 68, 0, 0.585);
+}
+.dark-mode .delete{
   background-color: rgba(255, 68, 0, 0.786);
 }
