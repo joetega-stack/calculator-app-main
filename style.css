@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(249, 247, 247);
+  gap: 20px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 500px;
+  width: 100%;
+  max-width: 300px;
+  background-color: rgba(128, 128, 128, 0.559);
+  padding: 20px;
+  gap: 20px;
+  border-radius: 15px;
+}
+
+.out {
+  background-color: rgb(243, 240, 240);
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  padding: 5px;
+  border-radius: 10px;
+
+  .outPut {
+    color: black;
+    font-size: 30px;
+  }
+}
+.num {
+  flex: 1;
+  width: 100%;
+  background-color: hsl(216, 4%, 26%);
+  display: grid;
+  gap: 5px;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: center;
+  padding: 10px;
+  border-radius: 10px;
+
+  .btn {
+    height: 60px;
+    border-radius: 100%;
+    border: none;
+    font-size: large;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .btn:active {
+    scale: 99%;
+  }
+}
+
+.dark-mode .btn{
+  background-color: black;
+  color: white;
+}
+
+.calc {
+  display: flex;
+  height: 20px;
+  justify-content: space-between;
+
+  p {
+    font-size: 20px;
+    color: black;
+  }
+  div {
+    display: flex;
+    gap: 5px;
+
+    .Theme {
+      font-size: 12px;
+    }
+  }
+}
+
+.dark-mode .calc{
+  p{
+    color: hsl(0, 100%, 100%);
+  }
+}
+
+.dark-mode .container{
+    background-color: black;
+}
+
+.toggle {
+  height: 25px;
+  width: 50px;
+  border-radius: 25px;
+  position: relative;
+  background-color: #ccc;
+  transition: background-color 0.3s ease;
+
+  #toggleState {
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background-color: rgb(69, 71, 69);
+    border-radius: 50%;
+    cursor: pointer;
+  }
+}
+
+.dark-mode #toggleState{
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    left: 50%;
+    border-radius: 50%;
+    background-color: red;
+    animation-duration: 2000ms;
+    cursor: pointer;
+    transition: left 0.3s ease, background-color 0.3s ease;
+}
+
+.reset {
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 68, 0, 0.585);
+  font-weight: 600;
+  color: white;
+  .reset:active{
+      scale: 99%;
+  }
+}
+
+.dark-mode .reset{
+  background-color: rgba(255, 68, 0, 0.786);
+}
